@@ -35,7 +35,7 @@ Try !hello first, then add some items and list.
 ```discord
 !help
 shopBot BOT Today at 3:54 PM
-Help commands: 
+Help commands:
                     !hello - test to make sure the bot is listening
                     !add [some item name] - add an item
                     !list - list items in the shopping list
@@ -52,4 +52,4 @@ Help commands:
 
 ## Credit
 
-Mostly I credit this tutorial: https://www.devdungeon.com/content/make-discord-bot-python
+Mostly I credit this tutorial: <https://www.devdungeon.com/content/make-discord-bot-python>

@@ -40,6 +40,7 @@ async def on_message(message):
         print("got a hello command")
     elif message.content.startswith('!list'):
         print("got a list command")
+        pp.pprint(shoppingList)
         msg = 'You have the following items on the list:'
         await client.send_message(message.channel,msg)
         x = 0
@@ -85,6 +86,7 @@ async def on_message(message):
         exit()
     elif message.content.startswith('!save'):
         print("forcing save to disk")
+        pp.pprint(shoppingList)
         saveList(shoppingList)
         msg = "ok, I saved your file to disk on the bot machine"
         await client.send_message(message.channel,msg)
@@ -111,6 +113,8 @@ async def on_message(message):
         except:
             msg = "item not on list"
             await client.send_message(message.channel,msg)
+        pp.pprint(shoppingList)
+        saveList(shoppingList)
     elif message.content.startswith('!total'):
         count = len(shoppingList)
         msg = 'You have ' + str(count) + ' items on your list'
