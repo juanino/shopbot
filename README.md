@@ -42,11 +42,13 @@ Help commands:
                     !remove [some item name] - remove a specific item by name
                     !pop [item number] - remove a specific item
                     !save - force list to be saved. not necessary except for debugging
+                    !total - how many items are on the list
 ```
 
 ## Issues
 
 * You definitely need the specific version of discord.py.  I have no idea why.
+* When using control + c in windows it takes a long time for the program to exit. use !crash in discord instead to tell the bot to shutdown
 
 ## Credit
 
