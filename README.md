@@ -34,7 +34,7 @@ Try !hello first, then add some items and list.
 
 ```discord
 !help
-shopBotBOTToday at 3:54 PM
+shopBot BOT Today at 3:54 PM
 Help commands: 
                     !hello - test to make sure the bot is listening
                     !add [some item name] - add an item
