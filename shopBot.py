@@ -110,6 +110,8 @@ async def on_message(message):
         await client.send_message(message.channel,msg)
         try:
             shoppingList.pop(int(itemToRemove))
+            msg = "Successfully removed" + itemToRemove
+            await client.send_message(message.channel,msg)
         except:
             msg = "item not on list"
             await client.send_message(message.channel,msg)
