@@ -74,8 +74,10 @@ async def on_message(message):
         print(type(itemToRemove))
         try:
             shoppingList.remove(itemToRemove)
+            msg = "Successfully removed" + itemToRemove
+            await client.send_message(message.channel,msg)
         except:
-            msg = "item not on list"
+            msg = itemToRemove + " not on list"
             await client.send_message(message.channel,msg)
         pp.pprint(shoppingList)
         saveList(shoppingList)
@@ -94,6 +96,7 @@ async def on_message(message):
                     !remove [some item name] - remove a specific item by name
                     !pop [item number] - remove a specific item
                     !save - force list to be saved. not necessary except for debugging
+                    !total - how many items are on the list
         """
         await client.send_message(message.channel,msg)
     elif message.content.startswith('!pop'):
@@ -101,13 +104,17 @@ async def on_message(message):
         print('remove msg is->' + itemToRemove)
         itemToRemove = itemToRemove.replace('!pop','')
         print('item->' + itemToRemove)
-        msg = 'Removing ' + itemToRemove + ' from the list'
+        msg = 'Removing #' + itemToRemove + ' ' + shoppingList[int(itemToRemove)] + ' from the list' 
         await client.send_message(message.channel,msg)
         try:
             shoppingList.pop(int(itemToRemove))
         except:
             msg = "item not on list"
             await client.send_message(message.channel,msg)
+    elif message.content.startswith('!total'):
+        count = len(shoppingList)
+        msg = 'You have ' + str(count) + ' items on your list'
+        await client.send_message(message.channel,msg)
 
 @client.event
 async def on_ready():
