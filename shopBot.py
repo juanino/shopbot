@@ -44,11 +44,13 @@ async def on_message(message):
         msg = 'You have the following items on the list:'
         await client.send_message(message.channel,msg)
         x = 0
+        msg = ""
         for item in shoppingList:
             print(str(x)+item)
-            msg = "#" + str(x)+ ".  " + item
-            await client.send_message(message.channel,msg)
+            msg = msg +  "#" + str(x)+ ".  " + item + "\n"
+            # await client.send_message(message.channel,msg)
             x = x + 1 
+        await client.send_message(message.channel,msg)
         await client.send_message(message.channel,'end of list')
     elif message.content.startswith('!add'):
         itemToAdd = str(message.content)
