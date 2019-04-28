@@ -8,8 +8,11 @@ The Alex and Google Home smart speakers are annoying, they don't allow you to re
 
 ## Pre Requisites
 
-* For windows, Python <https://www.python.org/downloads/>
-* For linux, you should already have python installed. If not try:
+* A server, an app, a bot, and a token
+** You can follow this https://www.devdungeon.com/content/make-discord-bot-python
+* Python
+** For windows, Python <https://www.python.org/downloads/>
+** For linux, you should already have python installed. If not try:
 
 ```bash
 apt-get install python3
@@ -27,5 +30,8 @@ apt-get install python3-pip
 
 ## Issues
 
+* You definitely need the specific version of discord.py.  I have no idea why.
+
 ## Credit
+
 Mostly I credit this tutorial: https://www.devdungeon.com/content/make-discord-bot-python
