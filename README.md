@@ -19,13 +19,29 @@ apt-get install python3
 apt-get install python3-pip
 ```
 
-## Usage
+## Startup
 
 ```bash
 # pip install discord.py==0.16.12
 # git clone https://github.com/juanino/shopbot.git
 # cp shopbotconfig_example.py shopbotconfig.py
 # ./shopBot.py
+```
+
+## Usage in discord
+
+Try !hello first, then add some items and list.
+
+```discord
+!help
+shopBotBOTToday at 3:54 PM
+Help commands: 
+                    !hello - test to make sure the bot is listening
+                    !add [some item name] - add an item
+                    !list - list items in the shopping list
+                    !remove [some item name] - remove a specific item by name
+                    !pop [item number] - remove a specific item
+                    !save - force list to be saved. not necessary except for debugging
 ```
 
 ## Issues
