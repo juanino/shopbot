@@ -45,6 +45,13 @@ Help commands:
                     !total - how many items are on the list
 ```
 
+## Use with QR scanner
+You can create a printout for use with a USB scanner gun with qrcode_maker.py by
+copying the sample_grocerysheet.py to grocerysheet.py and running it. The tool will output
+a scan_sheet.html which you can print out and scan.  These are readable with a standard QR gun like
+[this one](https://www.amazon.com/Tera-Wireless-Portable-Handheld-Vibration/dp/B07M68LS2N)
+
+
 ## Issues
 
 * You definitely need the specific version of discord.py.  I have no idea why.
