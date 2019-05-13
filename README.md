@@ -59,5 +59,5 @@ a scan_sheet.html which you can print out and scan.  These are readable with a s
 
 ## Credit
 
-Mostly I credit this tutorial: <https://www.devdungeon.com/content/make-discord-bot-python>
-Icons used in the sample sample_grocerysheet.py are from [icons8](https://icons8.com/)
+* Mostly I credit this tutorial: <https://www.devdungeon.com/content/make-discord-bot-python>
+* Icons used in the sample sample_grocerysheet.py are from [icons8](https://icons8.com/)
