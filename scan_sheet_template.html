@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick scan sheet</title>
+</head>
+<body>
+    <h1> Scan sheet</h1>
+    <table>
+        {% for item in groceries %}
+        <tr>
+            <td> {{ groceries[item] }} </td>
+            <td> {{ item }} </td> 
+            <td> <img src="{{item}}_image.jpg" > </td>
+        </tr>
+        {% endfor %}
+    <table>
+
+</body>
+</html>
