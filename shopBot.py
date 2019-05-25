@@ -130,6 +130,8 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
+    msg = "Bot startup complete"
+    await client.send_message(client.get_channel(cfg.bot_channel_id), msg)
 
 client.run(TOKEN)
 
