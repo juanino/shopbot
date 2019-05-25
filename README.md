@@ -25,7 +25,7 @@ apt-get install python3-pip
 # pip install discord.py==0.16.12
 # git clone https://github.com/juanino/shopbot.git
 # cp shopbotconfig_example.py shopbotconfig.py
-# ./shopBot.py
+# ./bot_safe.py
 ```
 
 ## Usage in discord
@@ -58,6 +58,7 @@ You can checkout a [sample.](scan_sheet.jpg)
 
 * You definitely need the specific version of discord.py.  I have no idea why.
 * When using control + c in windows it takes a long time for the program to exit. use !crash in discord instead to tell the bot to shutdown
+* the bot randomly crashes.... maybe once every few days. bot_safe.py is a wrapper to shopBot.py to handle this
 
 ## Credit
 
