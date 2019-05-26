@@ -23,6 +23,7 @@ apt-get install python3-pip
 
 ```bash
 # pip install discord.py==0.16.12
+# pip3 install discord_webhook
 # git clone https://github.com/juanino/shopbot.git
 # cp shopbotconfig_example.py shopbotconfig.py
 # ./bot_safe.py
