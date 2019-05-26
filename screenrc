@@ -1,0 +1,11 @@
+# to install:
+# add following to rc.local:
+# su [user to run as] -c 'cd /home/pi/vscode/shopbot  ;screen -dmS bots -c screenrc'
+
+# set scrollback if you want it and have the memory
+# defscrollback 10000
+
+# create more windows
+chdir /home/pi/vscode/shopbot
+screen -t debug
+screen -t shopbot ./bot_safe.py
