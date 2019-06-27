@@ -9,7 +9,7 @@ TOKEN = cfg.token
 client = discord.Client()
 shoppingList = []
 pp = pprint.PrettyPrinter(indent=4)
-
+master_channel = cfg.master_channel
 
 # open the shopping list pickle
 try:
@@ -33,6 +33,16 @@ async def on_message(message):
     else:
         print("message from " + str(message.author))
         print("message was: " + str(message.author) +  "->" + str(message.content))
+        print("channel was: " + str(message.channel))
+
+    # make sure the bot only answers on DM or channel configured in config file
+    msgchan = str(message.channel)
+    if msgchan == master_channel:
+        print("master channel is found, will answer")
+    elif msgchan.startswith('Direct Message'):
+        print("direct message ok")
+    else:
+        return
 
     if message.content.startswith('!hello'):
         msg = 'Hello {0.author.mention}'.format(message) + 'I am the shopBot'
